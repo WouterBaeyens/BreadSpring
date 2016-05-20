@@ -4,12 +4,19 @@
 
     <groupId>com.mycompany</groupId>
     <artifactId>breadDelivery-springmvc</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.3-SNAPSHOT</version>
     <packaging>war</packaging>
 
     <name>breadDelivery-springmvc</name>
 
     <properties>
+        <com.mycompany.version>1.3-SNAPSHOT</com.mycompany.version>
+        <org.springframework.version>4.0.1.RELEASE</org.springframework.version>
+        <javax.servlet.jsp.jstl.version>1.2.1</javax.servlet.jsp.jstl.version>
+        <org.glassfish.web.version>1.2.2</org.glassfish.web.version>
+        <javax.version>7.0</javax.version>
+        
+        <glassfish.home>C:/Program Files/glassfish-4.1.1/glassfish</glassfish.home>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
@@ -18,125 +25,131 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-aop</artifactId>
-            <version>4.0.1.RELEASE</version>
+            <version>${org.springframework.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-aspects</artifactId>
-            <version>4.0.1.RELEASE</version>
+            <version>${org.springframework.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
-            <version>4.0.1.RELEASE</version>
+            <version>${org.springframework.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <version>4.0.1.RELEASE</version>
+            <version>${org.springframework.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context-support</artifactId>
-            <version>4.0.1.RELEASE</version>
+            <version>${org.springframework.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
-            <version>4.0.1.RELEASE</version>
+            <version>${org.springframework.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-expression</artifactId>
-            <version>4.0.1.RELEASE</version>
+            <version>${org.springframework.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-framework-bom</artifactId>
-            <version>4.0.1.RELEASE</version>
+            <version>${org.springframework.version}</version>
             <type>pom</type>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-instrument</artifactId>
-            <version>4.0.1.RELEASE</version>
+            <version>${org.springframework.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-instrument-tomcat</artifactId>
-            <version>4.0.1.RELEASE</version>
+            <version>${org.springframework.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
-            <version>4.0.1.RELEASE</version>
+            <version>${org.springframework.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-jms</artifactId>
-            <version>4.0.1.RELEASE</version>
+            <version>${org.springframework.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-messaging</artifactId>
-            <version>4.0.1.RELEASE</version>
+            <version>${org.springframework.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-orm</artifactId>
-            <version>4.0.1.RELEASE</version>
+            <version>${org.springframework.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-oxm</artifactId>
-            <version>4.0.1.RELEASE</version>
+            <version>${org.springframework.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
-            <version>4.0.1.RELEASE</version>
+            <version>${org.springframework.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-tx</artifactId>
-            <version>4.0.1.RELEASE</version>
+            <version>${org.springframework.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-web</artifactId>
-            <version>4.0.1.RELEASE</version>
+            <version>${org.springframework.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
-            <version>4.0.1.RELEASE</version>
+            <version>${org.springframework.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc-portlet</artifactId>
-            <version>4.0.1.RELEASE</version>
+            <version>${org.springframework.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-websocket</artifactId>
-            <version>4.0.1.RELEASE</version>
+            <version>${org.springframework.version}</version>
         </dependency>
         <dependency>
             <groupId>javax.servlet.jsp.jstl</groupId>
             <artifactId>javax.servlet.jsp.jstl-api</artifactId>
-            <version>1.2.1</version>
+            <version>${javax.servlet.jsp.jstl.version}</version>
         </dependency>
         <dependency>
             <groupId>org.glassfish.web</groupId>
             <artifactId>javax.servlet.jsp.jstl</artifactId>
-            <version>1.2.2</version>
+            <version>${org.glassfish.web.version}</version>
         </dependency>
         <dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-web-api</artifactId>
-            <version>7.0</version>
+            <version>${javax.version}</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+                <groupId>com.mycompany</groupId>
+                <artifactId>breadDeliveryService</artifactId>
+                <version>${com.mycompany.version}</version>
+        </dependency>
+        
     </dependencies>
 
     <build>
@@ -188,43 +201,30 @@
             </plugin>
             
             <plugin>
-                 <groupId>org.codehaus.cargo</groupId>
-                 <artifactId>cargo-maven2-plugin</artifactId>
-                 <version>1.4.18</version>
-                 <configuration>
-                     <container>
-                         <containerId>glassfish4x</containerId>
-                         <type>remote</type>
-                     </container>
-                    <configuration>
-                        <type>runtime</type>
-                        <properties>
-                            <cargo.hostname>localhost</cargo.hostname>
-                            <cargo.remote.username>admin</cargo.remote.username>
-                            <cargo.remote.password>verySecure!</cargo.remote.password>
-                            <cargo.remote.port>107287</cargo.remote.port>
-                            <cargo.glassfish.domain.name>/breaddelivery</cargo.glassfish.domain.name>
-                        </properties>
-                    </configuration>
-                    <deployables>
-                        <deployable>
-                            <groupId>${project.groupId}</groupId>
-				<artifactId>${project.artifactId}</artifactId>
-				<type>war</type>
-				<properties>
-					<context>/breaddelivery</context>
-				</properties>
-                        </deployable>
-                    </deployables>
-                 </configuration>
-                 <dependencies>
-                     <dependency>
-                         <groupId>org.glassfish.deployment</groupId>
-			<artifactId>deployment-client</artifactId>
-                        <version>10.0-b28</version>
-                     </dependency>
-                 </dependencies>
+                <groupId>org.glassfish.maven.plugin</groupId>
+                <artifactId>maven-glassfish-plugin</artifactId>
+                <version>2.1</version>
+                <configuration>
+                    <glassfishDirectory>${glassfish.home}</glassfishDirectory>
+                    <user>admin</user>
+                    <passwordFile>${glassfish.home}/config/password.txt</passwordFile>
+                    <debug>true</debug>
+                    <terse>false</terse>
+                    <echo>true</echo>
+                    <domain>
+                        <name>domain1</name>
+                        <adminPort>4848</adminPort>
+                        <httpPort>8080</httpPort>
+                    </domain>
+                    <components>
+                        <component>
+                            <name>${project.artifactId}</name>
+                            <artifact>target/${project.build.finalName}.war</artifact>
+                        </component>
+                    </components>
+                </configuration>
             </plugin>
+            
         </plugins>
     </build>
     

@@ -22,4 +22,11 @@
 
     <!-- ADD PERSISTENCE SUPPORT HERE (jpa, hibernate, etc) -->
 
+    <bean id="service" class="service.BreadServiceFacade">
+        <constructor-arg>
+            <value>jpa</value>
+        </constructor-arg>
+        
+    </bean>
+
 </beans>

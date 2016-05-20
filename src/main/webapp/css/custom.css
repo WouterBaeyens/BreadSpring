@@ -1,0 +1,48 @@
+.box {
+    margin-bottom: 20px;
+    padding: 30px 15px;
+    background: #fff;
+   /* background: rgba(255,255,255,0.9);*/
+    background: rgba(200,200,200,0.9);	
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: rgba(35,35,35,1);
+}
+
+
+.checkbox-inline.no_indent,
+.checkbox-inline.no_indent+.checkbox-inline.no_indent {
+  margin-left: 0;
+  margin-right: 10px;
+}
+.checkbox-inline.no_indent:last-child {
+  margin-right: 0;
+}
+
+
+.row-bestelling{
+	
+}
+
+.row-betaling{
+	background-color: rgba(35, 50,35,1);
+}
+
+.row-saldo{
+	background-color: rgba(35, 35, 80, 1);
+}
+
+.row-future{
+	background-color: rgba(130, 130, 130, 1);
+}
+
+.modal{
+	top:75px;
+}
+
+@media screen and (min-width: 768px) {
+	
+	#addordermodal .modal-dialog  {width:500px;}
+	#weekoverviewmodal .modal-dialog  {width:500px;}
+}

@@ -1,0 +1,9 @@
+.centering {
+     float: none;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+.stretch {
+    width: 100%
+}
